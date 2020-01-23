@@ -1,0 +1,44 @@
+{
+	"contentType":"application/vnd.microsoft.card.receipt",
+	"content": {
+		"title":"Recipient's Name",
+		"items": [
+			{
+				"title":"Hotel Radisson Blu Hotel at Disneyland (r) Paris.",
+				"subtitle":"<a href=\"https://...\">$71 Today up to 27% off</a><br>Booked in the last 2 hours",
+				"text":"Disneyland paris. 40 Aliee De la Mare dian Houleuse, Magny-le-Hongre, Seine-Marne.",
+				"image": {
+					"url":"https://foo.com/path/image.jpg",
+					"alt":"hello thumb"
+				},
+				"price":"$71",
+			},
+			{
+				"title":"Label AAA",
+				"price":"$140",
+			},
+			{
+				"title":"Label BBB",
+				"price":"$110",
+			}       
+		],
+
+		"facts": [
+		  { "key":"Order Number",            "value":"1234567890" },
+		  { "key":"expected delivery time",  "value":"2016.06.15" },
+		  { "key":"Payment Method",          "value":" VISA 0987" },
+		  { "key":"Delivery Address",        "value":"Prague, Andel, 14700" }
+		],
+
+		"tax":"$20.40",
+		"total":"$320.40",
+
+		"buttons": [
+			{
+				"type":"imBack",
+				"title":"Call to Action",
+				"value":"<...>"
+			}
+		]
+	}
+}

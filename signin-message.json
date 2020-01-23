@@ -1,0 +1,32 @@
+{
+  "type": "message",
+  "timestamp": "2016-06-15T06:14:38.9741981Z",
+  "from": {
+    "id": "42166681",
+    "name": "TestBot"
+  },
+  "conversation": {
+    "id": "8a684db5",
+	"name": "Conv2"
+  },
+  "recipient": {
+    "id": "2c1c7fa3",
+    "name": "User1"
+  },
+  "text": "",
+  "summary": "Request to sign in",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.signin",
+      "content": {
+        "title": "I need your credentials to steal all of your money",
+        "button": {
+          "type": "signin",
+          "title": "Signin",
+          "value": "https://login.live.com/login.srf?wa=wsignin1.0&ct=1464753247&rver=6.6.6556.0&wp=MBI_SSL&wreply=https:%2F%2Foutlook.live.com%2Fowa%2F&id=292841&CBCXT=out"
+        }
+      }
+    }
+  ],
+  "replyToId": "5b43c64c5dd84b39a3fe1f65358276fc"
+}

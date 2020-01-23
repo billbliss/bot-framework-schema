@@ -1,0 +1,118 @@
+{
+  "type": "message",
+  "timestamp": "2016-06-20T18:35:36.5360234Z",
+  "from": {
+    "id": "42166681",
+    "name": "TestBot"
+  },
+  "conversation": {
+    "id": "8a684db5",
+    "name": "Conv2"
+  },
+  "recipient": {
+    "id": "2c1c7fa3",
+    "name": "User1"
+  },
+  "textFormat": "plain",
+  "attachmentLayout": "carousel",
+  "text": "test carousel",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Details about Alfani Voyage Synthetic Wedge Sandal",
+        "text": "Price: $17.99 USD",
+        "images": [
+          {
+            "url": "https://tse2.mm.bing.net/th?id=OIP.M7c063034a5e451261019b98f0f9c991co0&pid=Api"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "imBack",
+            "title": "Places to buy",
+            "value": "Places To Buy"
+          },
+          {
+            "type": "imBack",
+            "title": "Related Products",
+            "value": "Related Products"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Bandolino Gurrey Womens Size 9.5 Pink Wedge Sandals Shoes",
+        "text": "Price: $17.99 USD",
+        "images": [
+          {
+            "url": "https://tse2.mm.bing.net/th?id=OIP.M1977ca518c034a35854840ce535eed5ao0&pid=Api"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "imBack",
+            "title": "Places to buy",
+            "value": "Places To Buy"
+          },
+          {
+            "type": "imBack",
+            "title": "Related Products",
+            "value": "Related Products"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Sonoran Flat Sandals Womens Shoes - b.o.c. B?rn Concept ...",
+        "text": "Price: $85 USD",
+        "images": [
+          {
+            "url": "https://tse4.mm.bing.net/th?id=OIP.M0a6173fef7e25f6deab58116ccd981b0o0&pid=Api"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "imBack",
+            "title": "Places to buy",
+            "value": "Places To Buy"
+          },
+          {
+            "type": "imBack",
+            "title": "Related Products",
+            "value": "Related Products"
+          }
+        ]
+      }
+    },
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Style & Co. Jodii Platform Wedge Thong Sandals Womens Shoes",
+        "text": "Price: $14.57 USD",
+        "images": [
+          {
+            "url": "https://tse2.mm.bing.net/th?id=OIP.M17a60132d0ed2ee6127a269d71c39c49o0&pid=Api"
+          }
+        ],
+        "buttons": [
+          {
+            "type": "imBack",
+            "title": "Places to buy",
+            "value": "Places To Buy"
+          },
+          {
+            "type": "imBack",
+            "title": "Related Products",
+            "value": "Related Products"
+          }
+        ]
+      }
+    }
+  ],
+  "replyToId": "072aff016be14565b5bba17eb27f4bcd"
+}

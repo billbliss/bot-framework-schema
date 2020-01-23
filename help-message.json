@@ -1,0 +1,129 @@
+{
+  "type": "message",
+  "timestamp": "2016-06-20T19:14:35.8804117Z",
+  "from": {
+    "id": "42166681",
+    "name": "TestBot"
+  },
+  "conversation": {
+    "id": "8a684db5",
+    "name": "Conv2"
+  },
+  "recipient": {
+    "id": "2c1c7fa3",
+    "name": "User1"
+  },
+  "text": "",
+  "summary": "list of commands as buttons",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.hero",
+      "content": {
+        "title": "Commands",
+        "buttons": [
+          {
+            "type": "imBack",
+            "title": "carousel",
+            "value": "carousel"
+          },
+          {
+            "type": "imBack",
+            "title": "channeldata",
+            "value": "channeldata"
+          },
+          {
+            "type": "imBack",
+            "title": "codeSample",
+            "value": "codeSample"
+          },
+          {
+            "type": "imBack",
+            "title": "dm",
+            "value": "dm"
+          },
+          {
+            "type": "imBack",
+            "title": "document",
+            "value": "document"
+          },
+          {
+            "type": "imBack",
+            "title": "emojii",
+            "value": "emojii"
+          },
+          {
+            "type": "imBack",
+            "title": "help",
+            "value": "help"
+          },
+          {
+            "type": "imBack",
+            "title": "hero",
+            "value": "hero"
+          },
+          {
+            "type": "imBack",
+            "title": "images",
+            "value": "images"
+          },
+          {
+            "type": "imBack",
+            "title": "list",
+            "value": "list"
+          },
+          {
+            "type": "imBack",
+            "title": "markdown",
+            "value": "markdown"
+          },
+          {
+            "type": "imBack",
+            "title": "members",
+            "value": "members"
+          },
+          {
+            "type": "imBack",
+            "title": "paragraph",
+            "value": "paragraph"
+          },
+          {
+            "type": "imBack",
+            "title": "receipt",
+            "value": "receipt"
+          },
+          {
+            "type": "imBack",
+            "title": "runall",
+            "value": "runall"
+          },
+          {
+            "type": "imBack",
+            "title": "signin",
+            "value": "signin"
+          },
+          {
+            "type": "imBack",
+            "title": "thumbnail",
+            "value": "thumbnail"
+          },
+          {
+            "type": "imBack",
+            "title": "typing",
+            "value": "typing"
+          },
+          {
+            "type": "imBack",
+            "title": "upload",
+            "value": "upload"
+          },
+          {
+            "type": "imBack",
+            "title": "video",
+            "value": "video"
+          }
+        ]
+      }
+    }
+  ],
+  "replyToId": "c0c5851f011844a3a963097c9cb07985"
+}

@@ -1,0 +1,111 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Microsoft CaaP (Conversation as a Platform) Receipt Card Schema",
+    "description": "Card schema for the Receipt card.",
+
+    "type": "object",
+	"required": [ "contentType", "content" ],
+	"additionalProperties": false,
+    "properties": {
+		"contentType": {
+			"enum": [ "application/vnd.microsoft.card.receipt" ],
+			"description": "MIME type for the receipt card."
+		},
+		"content": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string",
+					"description": "Title/caption for the receipt card."
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/lineitem"
+					},
+					"minItems": 1,
+					"description": "Line items in the receipt."
+				},
+				"facts": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/fact"
+					},
+					"description": "Collection of key/value pairs relevant to the receipt."
+				},				
+				"tax": {
+					"type": "string",
+					"description": "Tax paid on the receipt."
+				},
+				"vat": {
+					"type": "string",
+					"description": "VAT paid on the receipt."
+				},
+				"total": {
+					"type": "string",
+					"description": "Total line item for the receipt card."
+				},
+				"buttons": {
+					"type": "array",
+					"items": {
+						"$ref": "action-schema.json/action"
+					},
+					"minItems": 1
+				},
+				"tap": {
+					"$ref": "action-schema.json/action"
+				}
+			},
+			"required": [ "title", "items", "total", "buttons" ]
+		}
+	},
+
+    "definitions": {
+		"lineitem": {
+			"properties": {
+				"title": {
+					"type": "string",
+					"description": "Title for the receipt line item."
+				},
+				"subtitle": {
+					"type": "string",
+					"description": "Subtitle for the receipt line item."
+				},
+				"text": {
+					"type": "string",
+					"description": "Text description for the receipt line item."
+				},
+				"price": {
+					"type": "string",
+					"description": "Price of the receipt line item."
+				},
+				"image": {
+					"type": "object",
+					"properties": {
+						"url": {
+							"type": "string",
+							"description": "Image of the receipt line item."
+						},
+						"alt": {
+							"type": "string",
+							"description": "Alt text for the image."
+						}
+					},
+					"required": [ "url" ]
+				}
+			},
+			"required": [ "title", "price" ]
+		},
+		"fact": {
+			"properties": {
+				"key": {
+					"type": "string"
+				},
+				"value": {
+					"type": "string"
+				}
+			},
+			"required": [ "key", "value" ]
+		}
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "message",
+  "id": "a2ca94d96f184e72921506d97b25f079",
+  "timestamp": "2016-06-20T19:16:35.5112008Z",
+  "serviceUrl": "https://12ee5529.ngrok.io",
+  "channelId": "emulator",
+  "from": {
+    "id": "2c1c7fa3",
+    "name": "User1"
+  },
+  "conversation": {
+    "isGroup": false,
+    "id": "8a684db5",
+    "name": "Conv2"
+  },
+  "recipient": {
+    "id": "42166681",
+    "name": "TestBot"
+  },
+  "text": "dm",
+  "attachments": [],
+  "entities": []
+}

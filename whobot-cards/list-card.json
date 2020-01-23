@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Microsoft CaaP (Conversation as a Platform) List Card Schema",
+    "description": "Card schema for the List card.",
+
+    "type": "object",
+	"required": [ "contentType", "content" ],
+	"additionalProperties": false,
+    "properties": {
+		"contentType": {
+			"enum": [ "application/vnd.microsoft.card.list" ],
+			"description": "MIME type for the List card."
+		},
+		"content": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string",
+					"description": "The title of the list"
+				},
+				"items": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/listItems"
+					},
+					"minItems": 1,
+					"maxItems": 20
+				}
+			},
+			"required": [ "title", "items" ]
+		}
+	},
+	
+	"definitions": {
+		"listItems": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"enum": [
+						"person",
+						"file",
+						"section",
+						"any"
+					],
+					"description": "The set of valid types for a list item."
+				},
+				"id": {
+					"type": "string",
+					"description": "The id for the item in the list card: UPN (for person), path (for file)"
+				},
+				"title": {
+					"type": "string",
+					"description": "Text for the list item card."
+				},
+				"subtitle": {
+					"type": "string",
+					"description": "Text for the list item card."
+				},
+				"image": {
+					"type": "string",
+					"description": "URL of image for the list item. Only used when .type == 'any' "
+				},
+				"tap": {
+					"$ref": "action-schema.json/action"
+				}
+			},
+			"additionalProperties": false,
+			"required": [ "type", "title" ],
+		}
+	}
+}

@@ -1,0 +1,175 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Microsoft CaaP (Conversation as a Platform) Message Schema",
+    "description": "Message envelope schema for Bot Framework and Skype.",
+
+    "type": "object",
+	"required": [ "type", "timestamp", "from", "conversation", "recipient" ],
+	"additionalProperties": false,
+    "properties": {
+		"type": {
+			"$ref": "#/definitions/messageType",
+			"description": "Defines what kind of message is being sent."
+		},
+		"id": {
+			"type": "string",
+			"description": "The unique identifier of a user message the bot message is a reply to (needed in certain scenarios)."
+		},
+		"timestamp": {
+			"type": "string",
+			"format": "date-time",
+			"description": "Timestamp of the message in ISO8601 format, e.g. '2016-06-15T03:48:50.3817037Z'."
+		},
+		"serviceUrl": {
+			"$ref": "#/definitions/uri",
+			"description": "The channel-specific endpoint to which replies to the message should be sent."
+		},
+		"channelId": {
+			"$ref": "#/definitions/channelIds",
+			"description": "The unique identifier for the channel from which a message was sent."
+		},
+		"from": {
+			"$ref": "#/definitions/conversationParticipant",
+			"description": "The person or bot sending the message."
+		},
+		"conversation": {
+			"$ref": "#/definitions/conversationInfo",
+			"description": "Metadata about the conversation the message is a part of."
+		},
+		"recipient": {
+			"$ref": "#/definitions/conversationParticipant",
+			"description": "The person or bot receiving the message."
+		},
+		"text": {
+			"type": "string",
+			"description": "The text of the message."
+		},
+		"textFormat": {
+			"$ref": "#/definitions/textFormats",
+			"description": "Describes the format of the text property (plain, markdown, xml, etc.)."
+		},
+		"summary": {
+			"type": "string",
+			"description": "Describes the contents of complex messages."
+		},
+		"replyToId": {
+			"type": "string",
+			"description": "The ID of the message this message is in reply to. Optional if the message is not a reply."
+		},
+		"entities": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			},
+			"description": "Array of schema.org entities"
+		},
+		"attachments": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/attachment"
+			},
+			"description": "Array of attachments to the message."
+		},
+		"attachmentLayout": {
+			"$ref": "#/definitions/attachmentLayouts",
+			"description": "Layout hints for attachments (e.g. list, carousel, etc.)"
+		},
+		"channelData": {
+			"type": [ "boolean", "integer", "number", "string", "array", "object", "null" ], 
+			"description": "Channel-specific metadata."
+		}
+    },
+
+    "definitions": {
+		"messageType": {
+			"enum": [
+				"message",
+              	"conversationUpdate", 
+				"contactUpdate",
+				"typing"
+			],
+			"description": "The set of valid types for a message."
+		},
+		"channelIds": {
+			"enum": [
+				"emulator", 
+				"email",
+				"facebookMessenger", 
+				"groupMe",
+				"kik",
+				"skype", 
+				"skypeTeams", 
+				"slack",
+				"telegram",
+				"text/sms",
+				"web"
+			],
+			"description": "The set of valid channel identifiers."
+		},
+		"conversationParticipant": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the person or bot sending or receiving the message."
+				},
+				"name": {
+					"type": "string",
+					"description": "User-visible name for the person or bot sending or receiving the message."
+				}
+			},
+			"required": [ "id", "name" ]
+		},
+		"conversationInfo": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier for the conversation."
+				},
+				"isGroup": {
+					"type": "boolean",
+					"description": "Indicates whether the conversation is 1:1 or 1:M."
+				}
+			},
+			"required": [ "id" ]
+		},		
+		"textFormats": {
+			"enum": [
+				"plain",
+              	"markdown", 
+				"xml"
+			],
+			"description": "The set of types for the text property of the message."
+		},
+		"attachmentLayouts": {
+			"enum": [
+				"list",
+              	"carousel"
+			],
+			"description": "The set of layout hints for cards in the attachment collection."
+		},
+		"attachment": {
+			"type": "object",
+			"properties": {
+				"contentType": {
+					"type": "string",
+					"description": "MIME type of the attachment."
+				},
+				"content": {
+					"type": "object",
+					"description": "Object schema of contentType."
+				},
+				"contentUrl": {
+					"$ref": "#/definitions/uri",
+					"description": "Reference to location of attachment content."
+				}
+			},
+			"required": [ "contentType" ]
+		},
+		"uri": {
+			"type": "string",
+			"format": "uri"
+		}
+    }
+}

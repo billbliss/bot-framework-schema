@@ -1,0 +1,73 @@
+{
+	"contentType": "application/vnd.microsoft.card.list",
+	"content": {
+		"title": "Pedro DeRose Team",
+		"items": [
+			{
+				"type": "section",
+				"title": "Manager"
+			},
+			{
+				"type": "person",
+				"id": "gsheldon@microsoft.com",
+				"title": "Graham Sheldon",
+				"subtitle": "Principal PM Manager - Skypespaces PM",
+				"tap": {
+					"type": "postBack",
+					"value": "whois gsheldon@microsoft.com"
+				}
+			},
+			{
+				"type": "section",
+				"title": "Direct Reports"
+			},
+			{
+				"type": "person",
+				"id": "lajin@microsoft.com",
+				"title": "Larry Jin",
+				"subtitle": "Senior Program Manager - Skypespaces PM",
+				"tap": {
+					"type": "postBack",
+					"value": "whois gsheldon@microsoft.com"
+				}
+			},
+			{
+				"type": "person",
+				"id": "marlong@microsoft.com",
+				"title": "Mark Longton",
+				"subtitle": "Principal Program Manager - Skypespaces PM",
+				"tap": {
+					"type": "postBack",
+					"value": "whois gsheldon@microsoft.com"
+				}
+			},
+			{
+				"type": "person",
+				"id": "ritaylor@microsoft.com",
+				"title": "Richard Taylor",
+				"subtitle": "Senior Program Manager - Skypespaces PM",
+				"tap": {
+					"type": "postBack",
+					"value": "whois gsheldon@microsoft.com"
+				}
+			},
+			{
+				"type": "person",
+				"id": "vchawla@microsoft.com",
+				"title": "Vasudha Chawla",
+				"subtitle": "Program Manager II - Skypespaces PM",
+				"tap": {
+					"type": "postBack",
+					"value": "whois gsheldon@microsoft.com"
+				}
+			}
+		],
+		"buttons": [
+			{
+				"type": "postBack",
+				"title": "Select",
+				"value": "whois"
+			}
+		]
+	}
+}

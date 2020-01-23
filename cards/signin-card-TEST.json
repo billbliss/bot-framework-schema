@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Microsoft CaaP (Conversation as a Platform) Sign-In Card Schema",
+    "description": "Card schema for the sign-in card.",
+
+    "type": "object",
+	"required": [ "contentType", "content" ],
+	"additionalProperties": false,
+    "properties": {
+		"contentType": {
+			"enum": [ "application/vnd.microsoft.card.signin" ],
+			"description": "MIME type for the signin card."
+		},
+		"content": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string",
+					"description": "Title/caption for the sign-in card."
+				},
+				"button": {
+					"$ref": "#/definitions/action",
+					"description": "Button action to initiate sign-in."
+				}
+			},
+			"required": [ "title", "button" ]
+		}
+	},
+
+    "definitions": {
+		"action": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"enum": [
+						"openUrl",
+						"imBack",
+						"postBack",
+						"call",
+						"playAudio",
+						"playVideo",
+						"showImage",
+						"downloadFile",
+						"signin"
+					],
+					"description": "The set of valid button actions."
+				},
+				"title": {
+					"type": "string",
+					"description": "Button caption."
+				},
+				"image": {
+					"type": "string",
+					"description": "URL of image."
+				},
+				"value": {
+					"type": "string",
+					"description": "Value of the button."
+				}
+			},
+			"required": [ "type", "value" ]
+		}
+    }
+}

@@ -1,0 +1,60 @@
+{
+	"contentType": "application/vnd.microsoft.card.list",
+	"content": {
+		"title": "Larry Jin Recent Files",
+		"items": [
+			{
+				"type": "file",
+				"id": "https://microsoft.sharepoint.com/teams/skypespacesteamnew/Shared%20Documents/Bots/Start%20Control.pptx",
+				"title": "Start Control",
+				"subtitle": "teams > skypespacesteamnew > shared documents > bots",
+				"tap": {
+					"type": "postBack",
+					"value": "editOnline https://microsoft.sharepoint.com/teams/skypespacesteamnew/Shared%20Documents/Bots/Start%20Control.pptx"
+				}
+			},
+			{
+				"type": "file",
+				"id": "https://microsoft-my.sharepoint.com/personal/lajin_microsoft_com/skypenext/Cards%20and%20Redlines.pptx",
+				"title": "Cards and Redlines",
+				"subtitle": "OneDrive - Microsoft > Skypenext",
+				"tap": {
+					"type": "postBack",
+					"value": "editOnline https://microsoft-my.sharepoint.com/personal/lajin_microsoft_com/skypenext/Cards%20and%20Redlines.pptx"
+				}
+			},
+			{
+				"type": "file",
+				"id": "https://microsoft.sharepoint.com/teams/skypespacesteamnew/Shared%20Documents/Design/Actions.one",
+				"title": "Actions",
+				"subtitle": "teams > skypespacesteamnew > design",
+				"tap": {
+					"type": "postBack",
+					"value": "editOnline https://microsoft.sharepoint.com/teams/skypespacesteamnew/Shared%20Documents/Design/Actions.one"
+				}
+			},
+			{
+				"type": "file",
+				"id": "https://microsoft.sharepoint.com/teams/skypespacesteamnew/Shared%20Documents/Design/FinancialReport.xslx",
+				"title": "FinancialReport",
+				"subtitle": "teams > skypespacesteamnew > design",
+				"tap": {
+					"type": "postBack",
+					"value": "editOnline https://microsoft.sharepoint.com/teams/skypespacesteamnew/Shared%20Documents/Design/FinancialReport.xlsx"
+				}
+			},
+		],
+		"buttons": [
+			{
+				"type": "postBack",
+				"title": "Open Online",
+				"value": "editOnline"
+			},
+			{
+				"type": "postBack",
+				"title": "Open in Office",
+				"value": "editInOffice"
+			}
+		]
+	}
+}

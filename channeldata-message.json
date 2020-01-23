@@ -1,0 +1,21 @@
+{
+  "type": "message",
+  "timestamp": "2016-06-20T19:15:40.6819535Z",
+  "from": {
+    "id": "42166681",
+    "name": "TestBot"
+  },
+  "conversation": {
+    "id": "8a684db5",
+    "name": "Conv2"
+  },
+  "recipient": {
+    "id": "2c1c7fa3",
+    "name": "User1"
+  },
+  "text": "Address:11 Conversation:11 UserInConversation:11 channeldata",
+  "channelData": {
+    "prop": "property value"
+  },
+  "replyToId": "440d27d561e143cc809732832883b952"
+}

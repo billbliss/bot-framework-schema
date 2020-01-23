@@ -1,0 +1,33 @@
+{
+	"contentType": "application/vnd.microsoft.card.profile",
+	"content": {
+		"upn": "lajin@microsoft.com",
+		"text": "WhoBot has found things Larry has shared recently like his availability, recent files, and who he is currently working with to help you get to know him better and get things done.",
+		"buttons": [
+			{
+				"type": "postBack",
+				"title": "Availability",
+				"value": "availability lajin@microsoft.com"
+			},
+			{
+				"type": "postBack",
+				"title": "Reports To",
+				"value": "reportsto lajin@microsoft.com"
+			},
+			{
+				"type": "postBack",
+				"title": "Recent Files",
+				"value": "recentfiles lajin@microsoft.com"
+			},
+			{
+				"type": "postBack",
+				"title": "Works With",
+				"value": "workswith lajin@microsoft.com"
+			}
+		],
+		"tap": {
+			"type": "postBack",
+			"value": "chat lajin@microsoft.com"
+		}
+	}
+}
